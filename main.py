@@ -30,7 +30,7 @@ max = 100
 min = 1
 target = random.randint(min, max)
 print(art.logo)
-print(f"I´m thinkink of a number between {min} and {max}.")
+print(f"Im thinking of a number between {min} and {max}.")
 attempts = num_of_attempts()
 win = False
 while attempts > 0 and not win:
