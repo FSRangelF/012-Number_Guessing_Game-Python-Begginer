@@ -1,15 +1,18 @@
 import art
 import random
 
+EASY_LEVEL_TURNS = 10
+HARD_LEVEL_TURNS = 5
+
 def num_of_attempts():
   """return the number of attempts based in the selected level"""
   option = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
   while option != "easy" and option != "hard":
     option = input("This is not a valid option.\nChoose a difficulty. Type 'easy' or 'hard': ").lower()
   if option == "easy":
-    return 10
+    return EASY_LEVEL_TURNS
   else:
-    return 5
+    return HARD_LEVEL_TURNS
 
 def compare_number(num1, num2):
   """return the result of a number comparision and print the relative direction of the guess"""
